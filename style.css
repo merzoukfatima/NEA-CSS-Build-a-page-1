@@ -1,0 +1,95 @@
+html {
+  
+}
+body {
+}
+.container {
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(255, 248, 237);
+  position: absolute;
+  top: 0;
+  left: 0;
+  
+}
+.container__text {
+  text-align: center;
+}
+.text__position {
+  position: relative;
+  bottom: 10px;
+}
+.article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 350px;
+}
+.article__image {
+  position: relative;
+}
+img {
+  width: 280px;
+}
+.image__background {
+  background-color: lightblue;
+  width: 280px;
+  height: 280px;
+  z-index: -1;
+  position: absolute;
+  top: 20px;
+}
+.first__bg {
+  right: 20px;
+}
+.second__bg {
+  left: 20px;
+}
+.article__text {
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+}
+.first__text {
+  position: relative;
+  left: 20px;
+  bottom: 10px;
+}
+.second__text {
+  position: relative;
+  right: 20px;
+  bottom: 10px;
+}
+.form {
+  background-color: aquamarine;
+  width: 100%;
+}
+.form__personal,
+.form__timeline,
+.form__textarea,
+.form__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form__name,
+.form__email {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  top: 20px;
+  width: 250px;
+}
+.form__name {
+  right: 20px;
+}
+.form__email {
+  left: 20px;
+}
+input {
+  border-color: transparent;
+  background-color: transparent;
+  border-bottom-color: black;
+}
