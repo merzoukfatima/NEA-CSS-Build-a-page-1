@@ -1,16 +1,17 @@
 html {
-  
+  height: 100%;
+  width: 100%;
 }
 body {
 }
 .container {
   font-family: Arial, Helvetica, sans-serif;
-  height: 100%;
   width: 100%;
   background-color: rgb(255, 248, 237);
   position: absolute;
   top: 0;
   left: 0;
+  z-index: -1;
   
 }
 .container__text {
@@ -61,35 +62,44 @@ img {
   right: 20px;
   bottom: 10px;
 }
-.form {
-  background-color: aquamarine;
-  width: 100%;
+.form{
+  background-color: rgb(180, 252, 228);
+  padding: 20px;
 }
-.form__personal,
-.form__timeline,
-.form__textarea,
-.form__button {
-  display: flex;
+.form__input{
+  display: grid;
+  grid-template-columns: auto auto;
+  row-gap: 20px;
+  column-gap: 20px;
   justify-content: center;
-  align-items: center;
+  }
+
+.form__timeline,.form__textarea,.form__button{
+  grid-column-start: 1;
+  grid-column-end: 3;
 }
-.form__name,
-.form__email {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  position: relative;
-  top: 20px;
-  width: 250px;
-}
-.form__name {
-  right: 20px;
-}
-.form__email {
-  left: 20px;
-}
-input {
+input,textarea {
   border-color: transparent;
   background-color: transparent;
   border-bottom-color: black;
+  border-width: 2px;
+}
+.form__name,.form__email,.form__timeline,.form__textarea{
+  display: flex;
+  flex-direction: column;
+}
+.form__name input,.form__email input{
+  width: 300px;
+}
+
+.form__button button{
+background-color: transparent;
+border-color: black;
+width: 70px;
+height: 30px;
+}
+
+.form__button{
+  display: flex;
+  justify-content: right;
 }
